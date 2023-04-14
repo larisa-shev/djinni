@@ -1,0 +1,30 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1140px,
+) !default;
+// scss-docs-end container-max-widths
+
+$primary: #ed7135;
+$secondary: #666666;
+$dark: #292929;
+$link-color: $secondary;
+$gray: #ebebeb !default;
+$border-color: $gray !default;
+$card-border-color: $border-color;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+@import "_index";
+
+@import url("https://fonts.googleapis.com/css?family=Commissioner:wght@400;700&display=swap");
